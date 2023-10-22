@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coca-Cola Landing Page</title>
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Creepster&family=Quintessential&family=Rye&family=UnifrakturMaguntia&family=Kranky&family=Nosifer&family=Noto+Sans+Rubic&family=Noto+Color+Emoji&family=Dancing+Script&family=Fuggles&family=Indie+Flower&family=Kalam&family=Montserrat:wght@100&family=Permanent+Marker&family=Poppins&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9f71dab2a2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#">
+                    <img src="images/logo2.png" class="logo">
+                </a>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Taste the Feeling</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium rerum cupiditate quibusdam perferendis fuga.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            
+                <div class="imgBox">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/cocacola1.png"></div>
+
+                            <div class="swiper-slide"><img src="images/cocacola2.png"></div>
+
+                            <div class="swiper-slide"><img src="images/cocacola3.png"></div>
+
+                            <div class="swiper-slide"><img src="images/cocacola4.png"></div>
+
+                            <div class="swiper-slide"><img src="images/cocacola5.png"></div>
+
+                            <div class="swiper-slide"><img src="images/cocacola6.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li>
+                    <a href="#"><img src="images/facebook2.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/twitter2.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/instagram2.png"></a>
+                </li>
+            </ul>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                loop: true,
+            });
+        </script>
+    </body>
+</html>
